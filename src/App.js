@@ -11,7 +11,7 @@ function App() {
 
   useEffect(
     () =>
-      fetch("http://hp-api.herokuapp.com/api/characters/students")
+      fetch("https://hp-api.herokuapp.com/api/characters/students")
         .then((response) => response.json())
         .then((response) => setCharacterList(response))
         .catch((err) => console.log(err)),
