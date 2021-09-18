@@ -1,0 +1,5 @@
+.card-box__list {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}

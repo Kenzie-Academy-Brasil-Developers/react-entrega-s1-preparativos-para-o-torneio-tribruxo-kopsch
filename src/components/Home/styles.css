@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+
+:root {
+  --font-default: "Carattere", cursive;
+}
+
+@keyframes background-flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page__title {
+  font-family: var(--font-default);
+  font-size: 25pt;
+  text-align: center;
+  width: 75%;
+  color: #fff;
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  border-radius: 50px;
+  animation: background-flash 1s linear infinite;
+  transition-duration: 0.1s;
+}
+
+.home-page__button {
+  width: 50vw;
+  height: 8vh;
+  font-family: var(--font-default);
+  font-size: 15pt;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 15px 10px 35px 8px rgba(255, 255, 255, 0.75) inset;
+  -webkit-box-shadow: 15px 10px 35px 8px rgba(255, 255, 255, 0.75) inset;
+  -moz-box-shadow: 15px 10px 35px 8px rgba(255, 255, 255, 0.75) inset;
+}

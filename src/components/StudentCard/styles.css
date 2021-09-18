@@ -1,0 +1,21 @@
+.card-box {
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.256);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.card-box__name {
+  padding: 10px 0;
+}
+
+.card-box__name::before {
+  content: "➞";
+}
+.card-box__image {
+  width: 50vw;
+  max-height: 250px;
+  border-radius: 100px;
+}
