@@ -3,3 +3,13 @@
   flex-flow: column;
   align-items: center;
 }
+
+@media (min-width: 769px) {
+  .card-box__list {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75%;
+  }
+}

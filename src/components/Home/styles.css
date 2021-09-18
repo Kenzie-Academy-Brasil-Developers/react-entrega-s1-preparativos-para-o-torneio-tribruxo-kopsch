@@ -8,8 +8,11 @@
   0% {
     opacity: 1;
   }
-  100% {
+  50% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -30,25 +33,42 @@
   padding: 5px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.5),
-    rgba(0, 0, 0, 0.5)
+    rgba(142, 0, 0, 0.777),
+    rgba(255, 225, 106, 0.5)
   );
   border-radius: 50px;
-  animation: background-flash 1s linear infinite;
-  transition-duration: 0.1s;
+  animation: background-flash 0.75s linear infinite;
 }
 
 .home-page__button {
-  width: 50vw;
+  width: 200px;
   height: 8vh;
   font-family: var(--font-default);
   font-size: 15pt;
-  background: #000;
+  background: rgb(132, 77, 77);
   color: #fff;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 15px 10px 35px 8px rgba(255, 255, 255, 0.75) inset;
-  -webkit-box-shadow: 15px 10px 35px 8px rgba(255, 255, 255, 0.75) inset;
-  -moz-box-shadow: 15px 10px 35px 8px rgba(255, 255, 255, 0.75) inset;
+  box-shadow: 15px 10px 35px 8px rgba(255, 162, 162, 0.75) inset;
+  -webkit-box-shadow: 15px 10px 35px 8px rgba(255, 162, 162, 0.75) inset;
+  -moz-box-shadow: 15px 10px 35px 8px rgba(255, 162, 162, 0.75) inset;
+}
+
+.home-page__button:hover {
+  animation: button-animation 0.75s linear infinite;
+}
+
+@media (min-width: 769px) {
+  .home-page {
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+  .home-page__title {
+    font-size: 40pt;
+    width: 200px;
+    height: 210px;
+    padding: 20px;
+  }
 }

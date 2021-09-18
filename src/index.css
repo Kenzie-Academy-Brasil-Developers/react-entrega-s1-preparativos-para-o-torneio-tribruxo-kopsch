@@ -8,6 +8,10 @@ body {
   background-repeat: space;
 }
 
+#root {
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -18,5 +22,6 @@ code {
     background: url("/src/assets/img/background.png");
     background-size: cover;
     background-repeat: space;
+    height: 100vh;
   }
 }

@@ -5,6 +5,8 @@
   border-radius: 15px;
   text-align: center;
   color: #fff;
+  width: 250px;
+  min-height: 320px;
 }
 
 .card-box__name {
@@ -15,7 +17,7 @@
   content: "➞";
 }
 .card-box__image {
-  width: 50vw;
+  width: 250px;
   max-height: 250px;
   border-radius: 100px;
 }

@@ -1,4 +1,5 @@
 import Student from "../Student";
+import "./styles.css";
 
 const Main = ({ visibleCharacters, generateCards }) => {
   return (
